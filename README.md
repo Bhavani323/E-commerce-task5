@@ -1,48 +1,68 @@
-eCommerce application based on the microservices architecture built using Spring Boot and ReactJS.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-**DEMO**
-- Deployed to Heroku Cloud:
+## Available Scripts
 
-  https://shoppers-ecom-app.herokuapp.com
+In the project directory, you can run:
 
-  **Note:** It is running on a free dyno, so the services go to sleep if not in use.
-       For the first time, it may take some time to respond.
- 
-**FEATURES**
+### `yarn start`
 
-- Google OAuth 2.0 support for quick login.
-- Regular Username/Password authentication.
-- Search bar and Search suggestions help to find products quickly.
-- Stores user information in the MySQL database.
-- Stores API data in Redis Cache to minimize network calls.
-- Select filters to display products based on the selections.
-- Sort products by popularity, newest, and prices.
-- Pagination to display max products on a single page.
-- Stores authentication details like token information in cookies.
-- Store cart's product information in cookies.
-- Payment service using Stripe's API to buy products.
-- Responsiveness support for all devices.
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-**TOOLS USED**
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-- **ReactJS:** Front-end Javascript framework.
-- **Spring Boot 2.0:** Back-end JAVA framework to build microservices using Spring
- Rest Controller and Spring JPA.
-- **Material-UI:** Used Google's material design based on the CSS Framework for a responsive website.
-- **Semantic-UI:** Used some components which Material-UI doesn't support.
-- **MySQL:** Stores product and user information.
-- **Redis:** Stores API data in key-value pairs.
-- **Cloudinary:** CDN server for storing product images. 
-- **Google OAuth:** 3rd Party authentication service for quick login by retrieving user profile information. 
-- **Stripe:** Payment service API to handle user payment requests.
-- **Heroku Cloud Platform:** Deploying microservices on Heroku.
-- **Docker-Compose:** Easy way to bring up the application using containerization and behaves similarly in the production environment.
- 
-**MICROSERVICES**
+### `yarn test`
 
-- **React-UI Service:** Front-end client UI which displays data and makes API calls using Axios API.
-- **Common Data Service:** Handles client request to provide common data such as product, filters, categories and order information, etc. 
-- **Authentication Service:** Creates user account and handles username/password authentication.
-- **Payment Service:** Handles payment requests from the client and makes a subsequent request to Stripe API
- for money deduction. 
-- **Search Suggestion Service:** Provide default search suggestions and provides suggestions based on a prefix using Hashmap. The service creates the Hashmap based on available data from the database with various combinations and populates the map.
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `yarn build`
+
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
